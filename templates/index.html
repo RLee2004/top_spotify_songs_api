@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Top Tracks</title>
+</head>
+<body>
+    <center>
+        <h1>View Your Top Played Spotify Tracks</h1>
+        
+        <a href="{{ url_for('getTopTracks', time_range='short_term') }}"><button>Last Month</button></a>
+        <a href="{{ url_for('getTopTracks', time_range='medium_term') }}"><button>Last 6 Months</button></a>
+        <a href="{{ url_for('getTopTracks', time_range='long_term') }}"><button>Historical</button></a>
+    </center>
+</body>
+</html>
